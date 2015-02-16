@@ -1,63 +1,120 @@
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+
 <style>
     * {
          margin: 0;
         padding: 0;
     }
 
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    ul {
+        list-style: inside;
+    }
 
 
 
 
-    .box-container {
+
+    .width100p {
         width: 100%;
+    }
+
+    .maxwidth960 {
+        max-width: 960px;
+    }
+
+    .box-center {
+        margin: 0 auto;
+    }
+
+
+
+
+
+    header {
+        background-color: #2a95c5;
+    }
+
+        header h1 {
+                 color: white;
+            text-align: center;
+        }
+
+
+
+
+
+    .box--container {
+        margin-top: 50px;
+    }
+
+    .box--container.first {
+        margin-top: 0;
     }
 
         .box--header-container {
             background-color: black;
         }
 
-            .box-container h1 {
-                margin: 0 auto;
-
-                    width: 100%;
-                max-width: 960px;
-
+            .box--header-container h1 {
                 color: white;
             }
 
-        .box--content {
-            margin: 0 auto;
 
-                width: 100%;
-            max-width: 960px;
+
+
+
+    .box--date-container {
+        margin: 10px 0;
+    }
+
+        [class*="date"] {
+                 text-align: right;
+            text-decoration: underline;
         }
 
-            .box--content p {
-                     text-align: right;
-                text-decoration: underline;
+            .box--description-item {
+                margin-bottom: 10px;
             }
 
-                .box--description-item {
-                    margin-bottom: 10px;
+                .box--description-item--nested-list {
+                    padding-left: 20px;
                 }
 
-                    .box--description-item--nested-list {
-                        padding-left: 20px;
-                    }
+    .box--content {
+        margin-bottom: 10px;
+    }
 </style>
 
 
 
 
 
-<div class="box-container">
+<header>
+    <h1>Link's store</h1>
+</header>
+
+
+
+
+
+<div class="width100p  box--container  first">
     <div class="box--header-container">
-        <h1>300 потрясающих бесплатных сервисов</h1>
+        <h1 class="width100p  maxwidth960  box-center">
+            300 потрясающих бесплатных сервисов
+        </h1>
     </div>
 
-    <div class="box--content">
-        <p class="pub-date">pub-date: 2/15/2015</p>
-        <p class="post-date">post-date: 2/16/2015</p>
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="pub-date">pub-date: 2/15/2015</p>
+            <p class="post-date">post-date: 2/16/2015</p>
+        </div>
 
         <ul class="box--description-list">
             <li class="box--description-item">
@@ -109,15 +166,19 @@
 
 
 
-<div class="box-container">
+<div class="width100p  box--container">
     <div class="box--header-container">
-        <h1>Иерархия шаблонов</h1>
+        <h1 class="width100p  maxwidth960  box-center">
+            Иерархия шаблонов
+        </h1>
     </div>
 
-    <div class="box--content">
-        <p class="post-date">post-date: 2/16/2015</p>
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="post-date">post-date: 2/16/2015</p>
+        </div>
 
-        <p class="box-content">
+        <p class="box--content">
             Страницы WordPress сайта собираются подобно пазлу из 
             файлов-шаблонов. Некоторые шаблоны (например header.php и 
             footer.php) задействованы на всех страницах, другие используются 
