@@ -19,7 +19,8 @@
     }
 
     code {
-        padding: 5px;
+        margin-top: 10px;
+           padding: 5px;
 
         display: block;
 
@@ -65,6 +66,15 @@
 
 
 
+    .separator {
+        border: 1px solid #2a95c5;
+        margin: 10px 0 40px;
+    }
+
+
+
+
+
     .box--container {
         margin-top: 50px;
     }
@@ -105,6 +115,11 @@
     .box--content {
         margin-bottom: 10px;
     }
+
+        .box--content h2 {
+            background-color: #2a95c5;
+            color: white;
+        }
 
 
 
@@ -387,5 +402,166 @@
             <li class="box--description-item"><strong>HOSTNAME</strong> - without http</li>
         </ul>
 
+    </div>
+</div>
+
+
+
+
+
+
+<div class="width100p  box--container">
+    <div class="box--header-container">
+        <h1 class="width100p  maxwidth960  box-center">
+            GIT commands /can be update/
+        </h1>
+    </div>
+
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="post-date">post-date: 3/9/2015</p>
+        </div>
+
+        <h2>Delete remote branch:</h2>
+
+        <code class="box--content">
+            git push origin --delete <branchName>
+        </code>
+
+        <a href="http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely"
+           target="_blank"
+           class="box--source-link">
+            Source
+        </a>
+
+        <div class="separator"></div>
+    </div>
+
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="post-date">post-date: 3/9/2015</p>
+        </div>
+
+        <h2>Get remote branch:</h2>
+
+        <code class="box--content">
+            git fetch origin 'REMOTEbranchNAME'
+        </code>
+
+        <a href="http://stackoverflow.com/questions/9537392/git-fetch-remote-branch"
+           target="_blank"
+           class="box--source-link">
+            Source
+        </a>
+
+        <div class="separator"></div>
+    </div>
+
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="post-date">post-date: 3/9/2015</p>
+        </div>
+
+        <h2>Remove file:</h2>
+
+        <code class="box--content">
+            git rm --cached mylogfile.log
+        </code>
+
+        <p class="box--content">
+            Remove folder:
+        </p>
+
+        <code class="box--content">
+            git rm --cached -r mydirectory
+        </code>
+
+        <a href="http://stackoverflow.com/questions/1143796/remove-a-file-from-a-git-repository-without-deleting-it-from-the-local-filesyste"
+           target="_blank"
+           class="box--source-link">
+            Source
+        </a>
+
+        <div class="separator"></div>
+    </div>
+
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="post-date">post-date: 3/9/2015</p>
+        </div>
+
+        <h2>Permission denied (publickey)</h2>
+
+        <p class="box--content">
+            Running
+        </p>
+        
+        <code class="box--content">
+            ssh -vT git@github.com
+        </code>
+
+        <p class="box--content">
+            Return
+        </p>
+
+        <code class="box--content">
+            &emsp;OpenSSH_4.6p1, OpenSSL 0.9.8e 23 Feb 2007<br/>
+            &emsp;debug1: Connecting to github.com [207.97.227.239] port 22.<br/>
+            &emsp;debug1: Connection established.<br/>
+            &emsp;debug1: identity file /p/.ssh/identity type -1<br/>
+            &emsp;debug1: identity file /p/.ssh/id_rsa type -1<br/>
+            &emsp;debug1: identity file /p/.ssh/id_dsa type -1<br/>
+            &emsp;debug1: Remote protocol version 2.0, remote software version OpenSSH_5.1p1 Debia5github2<br/>
+            &emsp;debug1: match: OpenSSH_5.1p1 Debian-5github2 pat OpenSSH*<br/>
+            &emsp;debug1: Enabling compatibility mode for protocol 2.0<br/>
+            &emsp;debug1: Local version string SSH-2.0-OpenSSH_4.6<br/>
+            &emsp;debug1: SSH2_MSG_KEXINIT sent<br/>
+            &emsp;debug1: SSH2_MSG_KEXINIT received<br/>
+            &emsp;debug1: kex: server->client aes128-cbc hmac-md5 none<br/>
+            &emsp;debug1: kex: client->server aes128-cbc hmac-md5 none<br/>
+            &emsp;debug1: SSH2_MSG_KEX_DH_GEX_REQUEST(1024<1024<8192) sent<br/>
+            &emsp;debug1: expecting SSH2_MSG_KEX_DH_GEX_GROUP<br/>
+            &emsp;debug1: SSH2_MSG_KEX_DH_GEX_INIT sent<br/>
+            &emsp;debug1: expecting SSH2_MSG_KEX_DH_GEX_REPLY<br/>
+            &emsp;debug1: Host 'github.com' is known and matches the RSA host key.<br/>
+            &emsp;debug1: Found key in /p/.ssh/known_hosts:1<br/>
+            &emsp;debug1: ssh_rsa_verify: signature correct<br/>
+            &emsp;debug1: SSH2_MSG_NEWKEYS sent<br/>
+            &emsp;debug1: expecting SSH2_MSG_NEWKEYS<br/>
+            &emsp;debug1: SSH2_MSG_NEWKEYS received<br/>
+            &emsp;debug1: SSH2_MSG_SERVICE_REQUEST sent<br/>
+            &emsp;debug1: SSH2_MSG_SERVICE_ACCEPT received<br/>
+            &emsp;debug1: Authentications that can continue: publickey<br/>
+            &emsp;debug1: Next authentication method: publickey<br/>
+            &emsp;debug1: Trying private key: /p/.ssh/identity<br/>
+            &emsp;debug1: Trying private key: /p/.ssh/id_rsa<br/>
+            &emsp;debug1: Trying private key: /p/.ssh/id_dsa<br/>
+            &emsp;debug1: No more authentication methods to try.<br/>
+            &emsp;Permission denied (publickey).<br/>
+        </code>
+
+        <p class="box--content">
+            Do you recognize any of these?
+        </p>
+
+        <code class="box--content">
+            &emsp;debug1: Trying private key: /p/.ssh/identity<br/>
+            &emsp;debug1: Trying private key: /p/.ssh/id_rsa<br/>
+            &emsp;debug1: Trying private key: /p/.ssh/id_dsa<br/>
+        </code>
+
+        <p class="box--content">
+            You might try to specify the key to be used with -i:
+        </p>
+
+        <code class="box--content">
+            ssh -i /path/to/key -vT git@github.com
+        </code>
+
+        <a href="http://stackoverflow.com/questions/10138705/github-permission-denied-publickey"
+           target="_blank"
+           class="box--source-link">
+            Source
+        </a>
     </div>
 </div>
