@@ -565,3 +565,28 @@
         </a>
     </div>
 </div>
+
+
+
+
+
+<div class="width100p  box--container">
+    <div class="box--header-container">
+        <h1 class="width100p  maxwidth960  box-center">
+            View db requests log
+        </h1>
+    </div>
+
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="post-date">&ltNazar Salo&gt post-date: 3/12/2015</p>
+        </div>
+
+        <code class="box--content">
+            SHOW VARIABLES LIKE "general_log%";<br />
+            SET GLOBAL general_log = 'ON';<br />
+            <br />
+            sudo tail -f /var/lib/mysql/A031214.log<br />
+        </code>
+    </div>
+</div>
