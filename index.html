@@ -419,13 +419,22 @@
 
     <div class="width100p  maxwidth960  box-center  box--content">
         <div class="box--date-container">
-            <p class="post-date">post-date: 3/9/2015</p>
+            <p class="post-date">post-update: 3/18/2015</p>
         </div>
 
         <h2>Delete remote branch:</h2>
 
         <code class="box--content">
             git push origin --delete <branchName>
+        </code>
+
+        <p class="box--content">
+            or
+        </p>
+
+        <code class="box--content">
+            git branch -D BRANCHname<br/>
+            git push origin :BRANCHname<br/>
         </code>
 
         <a href="http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely"
@@ -449,6 +458,26 @@
         </code>
 
         <a href="http://stackoverflow.com/questions/9537392/git-fetch-remote-branch"
+           target="_blank"
+           class="box--source-link">
+            Source
+        </a>
+
+        <div class="separator"></div>
+    </div>
+
+    <div class="width100p  maxwidth960  box-center  box--content">
+        <div class="box--date-container">
+            <p class="post-date">post-date: 3/18/2015</p>
+        </div>
+
+        <h2>Get all remote branch:</h2>
+
+        <code class="box--content">
+            git branch -va
+        </code>
+
+        <a href="http://stackoverflow.com/questions/1783405/checkout-remote-git-branch"
            target="_blank"
            class="box--source-link">
             Source
