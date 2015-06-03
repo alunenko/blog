@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Generate post</title>
+	<style>
+		body:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		.left,
+		.right {
+			float: left;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="left">
+		<p>openTag name: <input data-bind="value: openTag1" /></p>
+		<p>attrClass: <input data-bind="value: attrClass1" /></p>
+		<p>className: <input data-bind="value: className1" /></p>
+		<p>endClass: <input data-bind='value: endClass1' /></p>
+		<p>endOpenTag: <input data-bind='value: endOpenTag1' /></p>
+		
+			<p>openTag name: <input data-bind="value: openTag2_1" /></p>
+			<p>attrClass: <input data-bind="value: attrClass2_1" /></p>
+			<p>className: <input data-bind="value: className2_1" /></p>
+			<p>endClass: <input data-bind='value: endClass2_1' /></p>
+			<p>endOpenTag: <input data-bind='value: endOpenTag2_1' /></p>
+			
+				<p>openTag name: <input data-bind="value: openTag3_1" /></p>
+				<p>attrClass: <input data-bind="value: attrClass3_1" /></p>
+				<p>className: <input data-bind="value: className3_1" /></p>
+				<p>endClass: <input data-bind='value: endClass3_1' /></p>
+				<p>endOpenTag: <input data-bind='value: endOpenTag3_1' /></p>
+				<p>content: <input data-bind='value: contentTag3_1' /></p>
+				<p>closeTag name: <input data-bind="value: closeTag3_1" /></p>
+
+				<p>openTag name: <input data-bind="value: openTag2_2" /></p>
+				<p>attrClass: <input data-bind="value: attrClass2_2" /></p>
+				<p>className: <input data-bind="value: className2_2" /></p>
+				<p>endClass: <input data-bind='value: endClass2_2' /></p>
+				<p>endOpenTag: <input data-bind='value: endOpenTag2_2' /></p>
+			
+					<p>openTag name: <input data-bind="value: openTag3_2" /></p>
+					<p>attrClass: <input data-bind="value: attrClass3_2" /></p>
+					<p>className: <input data-bind="value: className3_2" /></p>
+					<p>endClass: <input data-bind='value: endClass3_2' /></p>
+					<p>endOpenTag: <input data-bind='value: endOpenTag3_2' /></p>
+					
+						<p>openTag name: <input data-bind="value: openTag4_1" /></p>
+						<p>attrClass: <input data-bind="value: attrClass4_1" /></p>
+						<p>className: <input data-bind="value: className4_1" /></p>
+						<p>endClass: <input data-bind='value: endClass4_1' /></p>
+						<p>endOpenTag: <input data-bind='value: endOpenTag4_1' /></p>
+						<p>content: <input data-bind='value: contentTag4_1' /></p>
+						<p>closeTag name: <input data-bind="value: closeTag4_1" /></p>
+
+					<p>closeTag name: <input data-bind="value: closeTag3_2" /></p>
+
+					<p>openTag name: <input data-bind="value: openTag3_3" /></p>
+					<p>attrClass: <input data-bind="value: attrClass3_3" /></p>
+					<p>className: <input data-bind="value: className3_3" /></p>
+					<p>endClass: <input data-bind='value: endClass3_3' /></p>
+					<p>endOpenTag: <input data-bind='value: endOpenTag3_3' /></p>
+					<p>content: <input data-bind='value: contentTag3_3' /></p>
+					<p>closeTag name: <input data-bind="value: closeTag3_3" /></p>
+
+					<p>openTag name: <input data-bind="value: openTag3_4" /></p>
+					<p>attrClass: <input data-bind="value: attrClass3_4" /></p>
+					<p>className: <input data-bind="value: className3_4" /></p>
+					<p>endClass: <input data-bind='value: endClass3_4' /></p>
+					<p>attrHref: <input data-bind="value: attrHref3_4" /></p>
+					<p>href: <input data-bind="value: href3_4" /></p>
+					<p>endHref: <input data-bind='value: endHref3_4' /></p>
+					<p>attrHref: <input data-bind="value: attrTarget3_4" /></p>
+					<p>href: <input data-bind="value: target3_4" /></p>
+					<p>endHref: <input data-bind='value: endTarget3_4' /></p>
+					<p>endOpenTag: <input data-bind='value: endOpenTag3_4' /></p>
+					<p>content: <input data-bind='value: contentTag3_4' /></p>
+					<p>closeTag name: <input data-bind="value: closeTag3_4" /></p>
+
+				<p>closeTag name: <input data-bind="value: closeTag2_2" /></p>
+
+			<p>closeTag name: <input data-bind="value: closeTag2_1" /></p>
+
+		<p>closeTag name: <input data-bind="value: closeTag1" /></p>
+	</div>
+
+	<div class="right">
+		<code id='test' data-bind="text: fullName"></code>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+	<script src="script/postGenerator.js"></script>
+</body>
+</html>
